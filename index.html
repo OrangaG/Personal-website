@@ -12,7 +12,7 @@
       <nav class="header__navbar">
         <ul class="header__links">
           <li><a class="header__link" href="#work">Work</a></li>
-          <li><a class="header__link" href="#about-me">About</a></li>
+          <li><a class="header__link" href="#about-me">About Me</a></li>
           <li><a class="header__link" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -91,7 +91,7 @@
     </section>
 
     <section class="work">
-      <div class="work__description work--padded">
+      <div class="work__description">
         <div class="work__text">
           <h2 class="work__title">Description Header goes here</h2>
           <p class="work__summary">
@@ -107,66 +107,67 @@
           </p>
           <a href="#" class="work__link">Visit Site</a>
         </div>
-
-        <section class="tools">
-          <h1 class="tools__heading" id="about-me">Tools I use</h1>
-          <div class="tools__container">
-            <!-- TODO: Import the svg downloaded to use as the images in the tools section -->
-            <div class="tool">
-              <img class="tool__img" src="./assets/html.svg" alt="html icon" />
-              <p>HTML5</p>
-            </div>
-            <div class="tool">
-              <img class="tool__img" src="./assets/css.svg" alt="css icon" />
-              <p>CSS3</p>
-            </div>
-            <div class="tool">
-              <img class="tool__img" src="./assets/sass.svg" alt="sass icon" />
-              <p>Sass</p>
-            </div>
-            <div class="tool">
-              <img
-                class="tool__img"
-                src="./assets/js.svg"
-                alt="Javascript icon"
-              />
-              <p>Javascript</p>
-            </div>
-            <div class="tool">
-              <img
-                class="tool__img"
-                src="./assets/react.svg"
-                alt="React icon"
-              />
-              <p>React</p>
-            </div>
-          </div>
-        </section>
       </div>
-      <div class="work__image work__image--padded">
+      <div class="work__image">
         <div class="work__screenshot">TBD</div>
       </div>
-
-      <script type="module" src="/main.js"></script>
     </section>
 
-    <section class="about-me">
-      <div class="about-me">
-        <img src="./assets/happy_guy.jpg" alt="a happy guy" />
-        <div class="about-me__text">
-          <p>
-            Hey there!
+    <section class="about" id="about-me">
+      <h1 class="about-me__title">About Me</h1>
+      <div class="about-me__wrapper">
+        <div class="about-me">
+          <div class="about-me__text">
+            <p>
+              Hey there!<img
+                src="./assets/waving-hand.png"
+                alt="waving hand emoji"
+                width="30"
+              />
+              I am a passionate and skilled individual with a mission to create
+              outstanding websites that are functional and fun to use. I excel
+              in collaborative environments, leveraging effective communication
+              skills to ensure smooth teamwork. Let's join forces and bring your
+              ideas to life.
+            </p>
+          </div>
+          <img
+            class="about-me__image"
+            src="./assets/happy_guy.jpg"
+            alt="a happy guy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="tools">
+      <h1 class="tools__heading">Tools I use</h1>
+      <div class="tool__wrapper">
+        <div class="tools__container">
+          <div class="tool">
+            <img class="tool__img" src="./assets/html.svg" alt="html icon" />
+            <p>HTML5</p>
+          </div>
+          <div class="tool">
+            <img class="tool__img" src="./assets/css.svg" alt="css icon" />
+            <p>CSS3</p>
+          </div>
+          <div class="tool">
+            <img class="tool__img" src="./assets/sass.svg" alt="sass icon" />
+            <p>Sass</p>
+          </div>
+          <div class="tool">
             <img
-              src="./assets/waving-hand.png"
-              alt="waving hand emoji"
-              width="20"
+              class="tool__img"
+              src="./assets/js.svg"
+              alt="Javascript icon"
             />
-            I am a passionate and skilled individual with a mission to create
-            outstanding websites that are functional and fun to use. I excel in
-            collaborative environments, leveraging effective communication
-            skills to ensure smooth teamwork. Let's join forces and bring your
-            ideas to life
-          </p>
+            <p>Javascript</p>
+          </div>
+          <div class="tool">
+            <img class="tool__img" src="./assets/react.svg" alt="React icon" />
+            <p>React</p>
+          </div>
         </div>
       </div>
     </section>
@@ -198,5 +199,6 @@
     </p>
     <p>&copy; 2023 George Oranga</p>
     <a href="#">Back to top &uarr;</a>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
