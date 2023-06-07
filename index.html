@@ -34,6 +34,7 @@
           </div>
         </div>
         <div class="header__image-box">
+          <!-- TODO:Fix the header image loading the background purple -->
           <img
             class="header__image"
             src="./assets/coder.jpg"
@@ -173,9 +174,13 @@
     </section>
 
     <section id="contact">
-      <h1>Get in touch</h1>
       <div class="form-container">
-        <form action="https://formspree.io/f/meqwbope" method="POST">
+        <h1 class="contact__title">Get in touch</h1>
+        <form
+          action="https://formspree.io/f/meqwbope"
+          method="POST"
+          class="form"
+        >
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required />
           <label for="email">Email</label>
@@ -184,8 +189,8 @@
           <textarea
             name="message"
             id="message"
-            cols="30"
-            rows="10"
+            cols="20"
+            rows="3"
             required
           ></textarea>
           <button type="submit">Send Message</button>
@@ -193,12 +198,14 @@
       </div>
     </section>
 
-    <p>
-      Illustrations designed by upklyak & pikisuperstar.
-      <a href="http://www.freepik.com"> Freepik</a>
-    </p>
-    <p>&copy; 2023 George Oranga</p>
-    <a href="#">Back to top &uarr;</a>
+    <footer class="footer">
+      <p>
+        Illustrations designed by upklyak & pikisuperstar.
+        <a href="http://www.freepik.com"> Freepik</a>
+      </p>
+      <p>&copy; 2023 George Oranga</p>
+      <a href="#">Back to top &uarr;</a>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
