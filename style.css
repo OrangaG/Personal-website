@@ -277,6 +277,7 @@ a {
 
 /* Contact */
 #contact {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 3rem 0;
@@ -376,5 +377,32 @@ button:hover {
 
 /* footer */
 .footer {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #96ce5e;
   background-color: #663399;
+  padding-bottom: 2rem;
+}
+
+.footer__link {
+  color: #96ce5e;
+  text-decoration: underline;
+}
+
+.footer__arrow {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  color: #96ce5e;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #96ce5e;
+}
+
+.footer__arrow:hover {
+  background-color: #96ce5e;
+  color: #663399;
 }
